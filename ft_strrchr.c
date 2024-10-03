@@ -3,26 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ainigo-l <ainigo-l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: andreailara <andreailara@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 15:07:23 by ainigo-l          #+#    #+#             */
-/*   Updated: 2024/10/03 10:27:10 by ainigo-l         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:35:47 by andreailara      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	const char	*latest = NULL;
 
-	while (*str)
+	while (*s)
 	{
-		if (*str == (char)c)
-			latest = str;
-		str++;
+		if (*s == (char)c)
+			latest = s;
+		s++;
 	}
 	if ((char)c == '\0')
-		return ((char *)str);
+		return ((char *)s);
 	return ((char *)latest);
 }
