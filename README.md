@@ -86,7 +86,7 @@ Estas funciones están diseñadas para manejar listas enlazadas utilizando la es
 1. Clona este repositorio:
 
     ```bash
-    git clone https://github.com/AndreaILara/Libft-sin-main.git
+    git clone https://github.com/AndreaILara/Libft-42.git
     cd libft
     ```
 
